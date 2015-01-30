@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
         {% style "css/screen.css" %}
     </head>
     <body>
@@ -46,7 +47,7 @@
 
             <div class="col-md-3">
                 <div id="sidebar">
-                    <h3>Links</h3>
+                    <p>Links</p>
                     <ul id="links">
                         <li><a href="http://carmenla.me/blog/index.html">Carmen's Blog</a></li>
                         {% for page in sidebar-pages %}
@@ -54,7 +55,7 @@
                         {% endfor %}
                     </ul>
                     <div id="recent">
-                        <h3>Recent Posts</h3>
+                        <p>Recent Posts</p>
                         <ul>
                         {% for post in latest-posts %}
                         <li><a href="{{post.uri}}">{{post.title}}</a></li>
@@ -62,7 +63,7 @@
                         </ul>
                     </div>
                     <div id="tags">
-                        <h3>Tags</h3>
+                        <p>Tags</p>
                         <ul>
                         {% for tag in tags %}
                         <li><a href="{{tag.uri}}">{{tag.name}}</a></li>
